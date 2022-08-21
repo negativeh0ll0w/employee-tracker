@@ -9,4 +9,6 @@ a database program to keep track of employees and their roles
 ## languages
 * node.js
 * express.js
-* mysql
+* mySQL2
+* inquirer
+* console.table
