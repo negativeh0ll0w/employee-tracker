@@ -7,6 +7,6 @@ a database program to keep track of employees and their roles
 * to start run node index.js
 
 ## languages
-node.js
-express.js
-mysql
+* node.js
+* express.js
+* mysql
