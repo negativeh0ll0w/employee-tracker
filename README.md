@@ -6,7 +6,7 @@ a database program to keep track of employees and their roles
 * to install run npm install express inquirer mysql2
 * to start run node index.js
 
-## languages
+## languages/dependencies
 * node.js
 * express.js
 * mySQL2
