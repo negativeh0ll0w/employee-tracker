@@ -1,6 +1,6 @@
 const db = require('./db/connection');
 const cTable = require('console.table');
-const inquirer = import('inquirer');
+const inquirer = require('inquirer');
 
 
 // prompt user for instructions and send to appropriate function
