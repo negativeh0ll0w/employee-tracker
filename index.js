@@ -210,11 +210,16 @@ const addRole = function() {
                     name: 'department',
                     message: 'Which department does the role belong to?',
                     choices: departments
+                },
+                {
+                    type: 'confirm',
+                    name: 'is_manager',
+                    message: 'Is this a manager role?'
                 }
             ])
             .then(data => {
                 params.push(data.department);
-
+                params.push(data.is_manager);
                 const sql = `INSERT INTO role (title, salary, department_id, is_manager) VALUES (?,?,?,?)`;
                 db.query(sql, params, (err, result) => {
                     if (err) {throw err};
@@ -305,3 +310,6 @@ const updateEmployeeRole = function() {
 
 // start db on load 
 userPrompt();
+
+
+// module.exports ??
