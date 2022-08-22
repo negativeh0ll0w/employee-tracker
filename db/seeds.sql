@@ -1,22 +1,22 @@
 
 
-INSERT INTO department (name) 
+INSERT INTO department (name, manager_id) 
 VALUES 
-    ('Engineering'),
-    ('Accounting'),
-    ('Legal'),
-    ('Sales');
+    ('Engineering', '1'),
+    ('Accounting', '2'),
+    ('Legal', '3'),
+    ('Sales', '4');
 
 INSERT INTO role (title, salary, department_id, is_manager)
 VALUES
-    ('Lead Engineer', 150000, '1', 1),
-    ('Engineer', 120000, '1', 0),
-    ('Director of Finance', 450000, '2', 1),
-    ('Accountant', 80000, '2', 0),
-    ('Senior Attorney', 3000000, '3', 1),
-    ('Junior Attorney', 190000, '3', 0),
-    ('Sales Lead', 100000, '4', 1),
-    ('Client Specialist', 60000, '4', 0);
+    ('Lead Engineer', 150000, '1'),
+    ('Engineer', 120000, '1'),
+    ('Director of Finance', 450000, '2'),
+    ('Accountant', 80000, '2'),
+    ('Senior Attorney', 3000000, '3'),
+    ('Junior Attorney', 190000, '3'),
+    ('Sales Lead', 100000, '4'),
+    ('Client Specialist', 60000, '4');
 
 INSERT INTO employee (last_name, first_name, role_id, manager_id)
 VALUES

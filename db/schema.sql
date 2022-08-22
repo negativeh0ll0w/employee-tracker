@@ -1,8 +1,7 @@
 
-
 CREATE TABLE department (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(30)
+    name VARCHAR(30),
 );
 
 CREATE TABLE role (
@@ -10,7 +9,6 @@ CREATE TABLE role (
     title VARCHAR(30),
     salary DECIMAL,
     department_id INT,
-    is_manager BOOLEAN,
     FOREIGN KEY (department_id) REFERENCES department(id) 
     ON DELETE SET NULL
 );
